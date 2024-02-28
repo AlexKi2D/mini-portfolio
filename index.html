@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ### MAIN CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- ### Favicon ### -->
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/img/favicon-16x16.png"
+    />
+
+    <!-- ### GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ### MAIN JS LINK -->
+    <script src="./assets/js/app.js" defer></script>
+    <title>My Mini Portfolio</title>
+  </head>
+  <body>
+    <!--  ### SECTION HERO ### -->
+    <section class="hero">
+      <img
+        src="./assets/img/theme_light.png"
+        alt="theme icon"
+        class="theme-btn"
+        id="toggleTheme"
+      />
+      <div class="hero-pic">
+        <div class="inner-circle"></div>
+        <img src="./assets/img/RonaldCircle2.png" alt="Ronald Bourichon" />
+      </div>
+
+      <div class="hero-info">
+        <h1>Ronald Bourichon</h1>
+        <h2>Frontend Developer</h2>
+        <div class="logo-container">
+          <a href="https://github.com/AlexKi2D" target="_blank">
+            <img src="./assets/img/github_light.png" alt="github logo" />
+          </a>
+          <a href="https://www.linkedin.com/in/rb78" target="_blank">
+            <img src="./assets/img/linkedin_light.png" alt="linkedin logo" />
+          </a>
+          <a href="mailto:bourichonronald@gmail.com">
+            <img src="./assets/img/email_light.png" alt="email logo" />
+          </a>
+        </div>
+      </div>
+    </section>
+    <!--  ### SECTION EXPERIENCE  ### -->
+    <section class="experience">
+      <h2>
+        <b>2+</b> <br />
+        Years <br />Frontend
+      </h2>
+      <!-- <h2>
+        <b>3</b> <br />
+        Satisfied <br />customers
+      </h2> -->
+      <h2>
+        <b>5+</b>
+        <br />Projects
+      </h2>
+    </section>
+
+    <!--  ### SECTION CTA  ### -->
+    <section class="cta">
+      <button class="btn download-btn" type="button" onclick="downloadFile()">
+        Download CV
+      </button>
+      <button class="btn contact-btn" type="button" onclick="contactMail()">
+        Contact Me
+      </button>
+    </section>
+
+    <!--  ### SECTION PORTFOLIO  ### -->
+    <section class="portfolio-skills">
+      <div class="btn-bg">
+        <button class="btn-2 active-btn" id="portfolio-btn">Portfolio</button>
+        <button class="btn-2" id="skills-btn">Skills</button>
+      </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+      <div class="wrapper project-wrapper">
+        <a href="https://eval-fe.ronaldbourichon.com/" target="_blank"
+          ><img src="./assets/img/project-1.png" alt="Project 1"
+        /></a>
+      </div>
+      <div class="wrapper project-wrapper">
+        <a href="https://www.nomdurepo.com"
+          ><img src="./assets/img/project-2.png" alt="Project 2"
+        /></a>
+      </div>
+      <div class="wrapper project-wrapper">
+        <a href="https://www.nomdurepo.com"
+          ><img src="./assets/img/project-3.png" alt="Project 3"
+        /></a>
+      </div>
+      <div class="wrapper project-wrapper">
+        <a href="https://www.nomdurepo.com"
+          ><img src="./assets/img/project-4.png" alt="Project 4"
+        /></a>
+      </div>
+    </section>
+    <!--  ### SECTION SKILLS  ### -->
+    <section class="skills" id="skills">
+      <div class="wrapper">
+        <h3>Frontend</h3>
+        <article class="frontend-skills">
+          <p>HTML</p>
+          <p>CSS</p>
+          <p>JavaScript</p>
+          <p>WordPress</p>
+        </article>
+      </div>
+
+      <div class="wrapper">
+        <h3>Backend</h3>
+        <article class="backend-skills">
+          <p>PHP</p>
+          <p>SQL</p>
+          <p>Git</p>
+        </article>
+      </div>
+    </section>
+    <section class="skills" id="skills-2">
+      <div class="wrapper">
+        <h3>Design</h3>
+        <article class="design-skills">
+          <p>Photoshop</p>
+          <p>FIGMA</p>
+        </article>
+      </div>
+      <div class="wrapper">
+        <h3>Others</h3>
+        <article class="design-skills">
+          <p>SEO</p>
+          <p>Responsive</p>
+          <p>Bootstrap</p>
+          <p>Agile SCRUM</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ### FOOTER ### -->
+    <footer><p>&copy; Ronald Bourichon 2024</p></footer>
+  </body>
+</html>
